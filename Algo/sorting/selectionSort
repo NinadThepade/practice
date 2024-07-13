@@ -16,6 +16,6 @@ function getSelectionSortedArray(arr) {
   console.log(arr);
 }
 
-let tempArray = [2,4,6,1,7,3,5];
+let tempArray = [2,4,8,6,1,7,3,5];
 
 getSelectionSortedArray(tempArray);
