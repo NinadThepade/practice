@@ -1,0 +1,21 @@
+function getSelectionSortedArray(arr) {
+	for(let i = 0; i < arr.length - 1; i++){
+  	let minVal = arr[i];
+    let minIndex = i;
+    for (let j= i+1; j <= arr.length - 1; j++) {
+    	if(minVal > arr[j]) {
+      	minVal = arr[j];
+        minIndex = j;
+      }
+    }
+    let temp = arr[i];
+    arr[i] = arr[minIndex];
+    arr[minIndex] = temp;
+    console.log(arr);
+  }
+  console.log(arr);
+}
+
+let tempArray = [2,4,6,1,7,3,5];
+
+getSelectionSortedArray(tempArray);
